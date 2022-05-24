@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+  <nav>
+    <a href="{% url 'home'%}">Home</a>
+    <a href="{% url 'about'%}">About</a>
+  </nav>
+
+{% block content %}
+Here is where the child content goes
+{% endblock content %}
+
+</body>
+</html>
